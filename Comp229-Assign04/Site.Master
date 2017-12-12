@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - Wrath of Kings</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -38,7 +38,9 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
+        <div>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/wrath.jpg" height="250px" Width="1000px"/>
+        </div>
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -47,13 +49,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <div class="brand-logo">
+                    <a class="navbar-brand" runat="server" href="~/HomePage">Wrath of Kings</a>
+                    </div>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/HomePage">Home</a></li>
+                        <li><a runat="server" href="~/ModelPage">Models</a></li>
+                        <li><a runat="server" href="~/UpdatePage">Update Page</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,11 +65,13 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
         </div>
+        <hr />
+        <footer>
+            <div class="container">
+                <p>&copy; <%: DateTime.Now.Year %> - Warth of Kings - Developed by Bruno Demore</p>
+            </div>
+        </footer>
 
     </form>
 </body>
