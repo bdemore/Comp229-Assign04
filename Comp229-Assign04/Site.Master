@@ -39,7 +39,7 @@
             </Scripts>
         </asp:ScriptManager>
         <div>
-        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/wrath.jpg" height="250px" Width="1000px"/>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/wrath.png" height="250px" Width="1280px"/>
         </div>
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
