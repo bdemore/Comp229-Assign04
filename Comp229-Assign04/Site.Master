@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Wrath of Kings</title>
+    <title><%: Page.Title %> - Games Online</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -39,7 +39,7 @@
             </Scripts>
         </asp:ScriptManager>
         <div>
-        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/wrath.png" height="250px" Width="1280px"/>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/wrath.png" height="200px" Width="1265px"/>
         </div>
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -50,7 +50,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="brand-logo">
-                    <a class="navbar-brand" runat="server" href="~/HomePage">Wrath of Kings</a>
+                    <a class="navbar-brand" runat="server" href="~/HomePage">Games Online</a>
                     </div>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -69,7 +69,7 @@
         <hr />
         <footer>
             <div class="container">
-                <p>&copy; <%: DateTime.Now.Year %> - Warth of Kings - Developed by Bruno Demore</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Games Online - Warth of Kings - Developed by Bruno Demore</p>
             </div>
         </footer>
 
