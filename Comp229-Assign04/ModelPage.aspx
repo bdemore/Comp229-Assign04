@@ -6,12 +6,12 @@
                         <div class="contentModel">
                             <div class="infoModel">
                                 <div class="nameModel">
-                                    <a href="Model.aspx?model=<%# Eval("Name") %>">
+                                    <a href="ModelPage.aspx?model=<%# Eval("Name") %>">
                                         <asp:Label ID="ModelLabel" Text='<%# Eval("Name") %>' runat="server" /></span>
                                     </a>
                                 </div>
                                 <div class="imageModel">
-                                    <a href="Model.aspx?model=<%# Eval("Name") %>">
+                                    <a href="ModelPage.aspx?model=<%# Eval("Name") %>">
                                         <asp:Image ID="ModelImage"
                                             AlternateText='<%# Eval("Name") %>'
                                             ImageUrl='<%# Eval("ImageUrl") %>'
@@ -24,4 +24,5 @@
                     </div>
                 </ItemTemplate>
             </asp:Repeater>
+            
 </asp:Content>

@@ -64,3 +64,11 @@ textarea {
     margin-left: 75px;
 
 }
+
+.emailNameBox {
+    display: block;
+    overflow: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
